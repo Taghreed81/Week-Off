@@ -145,3 +145,91 @@ function cloudyAndRainy(str1, str2) {
 		return false;
 	}
 }
+//EX13
+function weatherActivities(str) {
+var type1 = "cloudy";
+var type2 = "rainy";
+var type3 = "cold";
+var type4 = "sunny";
+if(str === type1){
+	return "wear a jacket";
+}else if( str === type2){
+	return "take an umberlla";
+}else if( str === type3){
+	return "take care of the snow";
+}else if(str === type4){
+	return "take a sunglass";
+}
+}
+//EX14
+function evenAndGreaterThan7(num) {
+	if( num % 2 ===0 && num > 7){
+		return true;
+	} else{
+		return false;
+	}
+}
+//EX15
+function areValidCredentials(name, pass) {
+	if((name.length > 3) && (pass.length >= 8)) {
+		return true;
+	} else {
+		return false;
+	}
+}
+//EX16
+function findMinLengthOfThreeWords(w1, w2, w3) {
+	var w1 = w1.length;
+	var w2 = w2.length;
+	var w3 = w3.length;
+
+	if(w1 < w2 && w1 < w3){
+		return w1;
+	}else if ( w2 < w1 && w2 < w3){
+		return w2;
+	}else if(w3 < w1 && w3 < w2){
+		return w3;
+	}
+}
+//EX17
+function findMaxLengthOfThreeWords(w1, w2, w3) {
+	var w1 = w1.length;
+	var w2 = w2.length;
+	var w3 = w3.length;
+	if(w1 > w2 && w1 > w3){
+		return w1;
+	}else if ( w2 > w1 && w2 > w3){
+		return w2;
+	} else if( w3 > w1 && w3 > w2){
+		return w3;
+	}
+}
+//EX18
+function guessMyNumber(num) {
+	var x =  Math.floor(Math.random(num));
+	if ( num === x){
+		return "You guessed my number!";
+	} else{
+		return "Nop, That wan't it";
+	}
+}
+//W1D5  iteration with while loop
+//EX1
+function sumOfN( num){
+	var sum = 0;
+	while ( num > 0){
+		sum = sum + num;
+		num = num -1
+	}
+return sum;
+}
+//EX2
+function factorialOfN(num) {
+	var x = 1;
+	while (num > 0){
+		x = x * num;
+		num = num-1;
+		x++;
+	}
+	return x;
+}
