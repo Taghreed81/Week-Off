@@ -1,3 +1,4 @@
+
 var myNumbers = document.getElementsByClassName("give");
 var myClear   = document.getElementById("clear");
 var equal     = document.getElementById("eq");
@@ -20,4 +21,4 @@ var myValue   = document.getElementById("type");
     	} else {
     	myValue.value = eval(myValue.value);
         }
-    
+    }
