@@ -225,11 +225,24 @@ return sum;
 }
 //EX2
 function factorialOfN(num) {
-	var x = 1;
+	var result = 1;
 	while (num > 0){
-		x = x * num;
+		result = result * num;
 		num = num-1;
-		x++;
 	}
-	return x;
+	return result;
+}
+//EX3
+function repeatString(str, num) {
+	var result = "";
+	while( num > 0) {
+		result = result + str;
+		num = num -1;
+
+	}
+	return result;
+}
+//EX4
+function countMinMax(n1, n2) {
+	
 }
