@@ -144,3 +144,109 @@ function average(array) {
 	var avarage = sum/array.length;
 	return avarage;
 }
+//EX10
+function square(array) {
+	var result = [];
+	for (var x = 0; x < array.length; x++){
+		result.push(array[x] * array[x]) ;
+	}
+	return result;
+}
+//EX11
+function isArray(array) {
+	if(Array.isArray(array)){
+		return true;
+	}
+		return false;
+	}
+	//EX12
+	function min(array) {
+		var min = array[0];
+		for(var x = 0; x < array.length; x++){
+			if(min > array[x]){
+				min = array[x];
+			}
+		}
+		return min;
+	}
+//EX13
+function max(array) {
+	var max = array[0];
+		for(var x = 0; x < array.length; x++){
+			if(max < array[x]){
+				max = array[x];
+			}
+		}
+		return max;
+	}
+	//EX14
+	function shortestString(array) {
+		var short = array[0].length;
+		for(var x = 0; x < array.length; x++){
+			if(short > array[x].length){
+				short = array[x].length;
+			}
+		}
+		return short;
+	}
+	//EX15
+	function longestString(array) {
+			var long = array[0].length;
+		for(var x = 0; x < array.length; x++){
+			if(long < array[x].length){
+				long = array[x].length;
+			}
+		}
+		return long;
+	}
+	//EX16
+	function minMax(array) {
+		var new_array= [];
+		var min = array[0];
+		var max = array[0];
+		for (var x =0; x < array.length; x++){
+			if (min > array[x]){
+				min = array[x];
+			}else if ( max < array[x]){
+				max = array[x];
+			}
+		}
+		new_array=[min, max];
+		return new_array;
+	}
+	//EX17
+	function shortestLongest(array) {
+		var new_array= [];
+		var min = array[0].length;
+		var max = array[0].length;
+		var shortstr = array[0];
+		var longstr = array[0];
+		for (var x =0; x < array.length; x++){
+			if (min > array[x].length){
+				min = array[x].length;
+				shortstr = array[x];
+			}else if ( max < array[x].length){
+				max = array[x].length;
+				longstr = array[x];
+			}
+		}
+		new_array=[shortstr, longstr];
+		return new_array;
+	}
+	//EX18
+	function multiplyBy(array, num) {
+		var new_array = [];
+		for (var x =0; x < array.length; x++){
+			new_array.push(array[x] * num);
+		}
+		return new_array;
+	}
+	//EX19
+	function multiplyByIndex(array) {
+		var new_array = [];
+		for (var x = 0; x < array.length; x++){
+			new_array[x] = array[x] * x;
+		}
+		return new_array;
+	}
+
