@@ -3,6 +3,14 @@ body {
 	 background-repeat: no-repeat;
 }
 
-.form-control {
-   width: 50%;
+.form-group{
+	border-radius: 10px;
+	margin:5px 0;
+	width: 50%;
+	outline: none;
 }
+form{
+	margin:200px 500px 500px 500px;
+    width:50%;
+}
+
